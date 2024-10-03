@@ -9,6 +9,9 @@ for (let i = 0; i < iconsArray.length; i++) {
   icons[name] = iconsArray[i];
 }
 
+document.querySelector("header>img").src = icons["logo"];
+document.querySelector("img#currentIcon").src = icons["clear-day"]
+
 async function getWeatherData(location) {
   const data = await fetch(
     `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${location}?key=7UNG542XK8LP2FC7GLU6QP264&iconSet=icons2`
