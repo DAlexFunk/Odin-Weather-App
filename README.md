@@ -13,5 +13,5 @@ A simple weather app where the user can input a location and it will show a weat
 ## Credits
 * [The Odin project](https://www.theodinproject.com) for providing the guidelines for the project and the skills necessary for completion.
 * [Visual Crossing Weather API](https://www.visualcrossing.com) for the weather data.
-* [Bas Milius's Meteocons](ttps://github.com/basmilius/weather-icons) for the weather icons used on the page.   
+* [Bas Milius's Meteocons](https://github.com/basmilius/weather-icons) for the weather icons used on the page.   
 * [Toptal](https://www.toptal.com/designers/subtlepatterns/) for the starry background image used in the header and the night background.
