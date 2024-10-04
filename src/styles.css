@@ -126,7 +126,7 @@ img#currentIcon {
 
   position: absolute;
   top: -10px;
-  right: 350px;
+  left: -100px;
 }
 
 p#description {
@@ -221,4 +221,16 @@ div.hour hr {
 
 div.hour div.time {
   text-align: center;
+}
+
+/* Error Dialog */
+dialog#error{
+  position: relative;
+  padding: 24px;
+}
+
+dialog#error button {
+  position: absolute;
+  top: 4px;
+  right: 4px;
 }
