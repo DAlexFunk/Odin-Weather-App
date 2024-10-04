@@ -1,5 +1,5 @@
 import "./styles.css";
-const { format, parseISO, parse } = require("date-fns");
+const { format, parseISO } = require("date-fns");
 
 const iconsInitial = require.context("./icons", false, /\.svg/);
 const iconsArray = iconsInitial.keys().map(iconsInitial);
@@ -74,6 +74,18 @@ function populatePage(data) {
   populateCurrentConditions(data);
   populateWeeklyForecast(data);
   populateHourlyData(data.days[0]);
+
+  if (
+    data.currentConditions.datetimeEpoch < data.currentConditions.sunriseEpoch ||
+    data.currentConditions.datetimeEpoch > data.currentConditions.sunsetEpoch
+  ) {
+    location.style["color"] = "#ebebeb"
+    document.querySelector("body").style["background"] = 'url("https://www.toptal.com/designers/subtlepatterns/uploads/darkness.png")';
+  } else {
+    location.style["color"] = ""
+    document.querySelector("body").style["background"] = "#8ecae6";
+    document.querySelector("body").style["filter"] = ""
+  }
 
   localStorage.setItem("data", JSON.stringify(data));
 }
