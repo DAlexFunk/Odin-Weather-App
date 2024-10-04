@@ -2,12 +2,13 @@
 The weather app project from The Odin Project
 
 ## Description
-A simple weather app where the user can input a location and it will show a weather summary for that location. The layout shows current conditions, weekly summary, and an hourly summary for today.
+A simple weather app where the user can input a location and it will show a weather summary for that location. The layout shows current conditions, a weekly summary, and an hourly summary for today.
 
 ## Use
+* The page can be found [here](https://dalexfunk.github.io/Odin-Weather-App/).
 * Enter a location into the top right and press search.
 * The screen will then populate with all the data.
-* The last search is saved in the browser (search will not update to new conditions if reloaded, will stay on the day and time of the last search).
+* The last search is saved in the browser (the search will not update to new conditions if reloaded, it will stay on the day and time of the last search).
 
 ## Credits
 * [The Odin project](https://www.theodinproject.com) for providing the guidelines for the project and the skills necessary for completion.
